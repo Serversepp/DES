@@ -32,7 +32,7 @@ def key_gen(input_key):
     return keys
 
 def split(k_p):
-    return k_p[:28],k_p[27:]
+    return k_p[:28],k_p[28:]
 
 def shift(liste1,liste2,x):
     while x != 0:
@@ -46,5 +46,9 @@ def shift(liste1,liste2,x):
     return liste1,liste2
 
 
+t1 = PC1(k)
+t2 = key_gen(t1)
+print(t2[len(t2)-1])
+print(t2)
+print(t2[len(t2)-2]==1)
 
-print(key_gen(PC1(k)))
