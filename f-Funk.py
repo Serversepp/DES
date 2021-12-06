@@ -71,8 +71,8 @@ def prepSBox(key):
     return splt_array
 
 def SBOX(key,sbox):
-    Z=key[0]*1+key[5]*2
-    S=key[1]*1+key[2]*2+key[3]*4+key[4]*8
+    Z=key[5]*1+key[0]*2
+    S=key[4]*1+key[3]*2+key[2]*4+key[1]*8
     return [int(x) for x in str(format(sbox[Z*16+S],"04b"))]
 
 def f_funk(R,k):
@@ -97,5 +97,4 @@ for i in range(0,len(l_6)):
 p = []
 for i in l_4:
     p = p+i
-
 print(box_perm(P,p))
