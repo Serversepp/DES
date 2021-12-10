@@ -45,10 +45,11 @@ def shift(liste1,liste2,x):
         x=x-1
     return liste1,liste2
 
-
+""""
 t1 = PC1(k)
 t2 = key_gen(t1)
 print(t2[len(t2)-1])
 print(t2)
 print(t2[len(t2)-2]==1)
 
+"""

@@ -88,7 +88,7 @@ def f_funk(R,k):
 #011011
 #01 2
 #1101 11
-
+""""
 mom_key = f_funk(Ri,Ki)
 l_6 = prepSBox(mom_key)
 l_4= []
