@@ -60,9 +60,8 @@ def expansion(e_selection, key):
         expanded_key.append(key[x])
     return expanded_key
 
-def xor(e_key,key_k):
-    #richtiges k-Key nur einerund richitges E()
-    return [e_key[i] ^ key_k[i] for i in range(len(e_key))]
+def xor(A,B):
+    return [A[i] ^ B[i] for i in range(len(A))]
 
 def prepSBox(key):
     splt_array=[]
@@ -88,7 +87,7 @@ def f_funk(R,k):
 #011011
 #01 2
 #1101 11
-""""
+
 mom_key = f_funk(Ri,Ki)
 l_6 = prepSBox(mom_key)
 l_4= []
